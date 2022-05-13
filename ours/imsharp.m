@@ -1,0 +1,21 @@
+function g = imsharp(f)
+f = mat2gray(f);
+PQ = paddesize(size(f));
+M = PQ(1);
+N = PQ(2);
+u = 0:(M - 1);
+v = 0:(N - 1);
+idx = find(u > M/2);
+u(idx) = u(idx) - M;
+idy = find(v > N/2);
+v(idy) = v(idy) - N;
+[V, U] = meshgrid(v, u);
+D0 = 0.05*PQ(2);
+H = exp(-((U.^2 + V.^2).^2)./(2*(D0^2)));
+F = fft2(f,size(H,1),size(H,2));
+g = real(ifft2(H.*F));
+g = g(1:size(f,1),1:size(f,2));
+
+t = mat2gray(f-g);
+f2 = mat2gray(f);
+g = (f2+t)/2;
