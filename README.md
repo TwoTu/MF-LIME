@@ -46,11 +46,10 @@
 
 ## 实验结果
 - **各方法主观对比**
-![](.\images\result.jpg)
+![](https://github.com/TwoTu/MF-LIME/blob/main/images/result.jpg)
 
 - **各方法客观评价**
-![](.\images\result_datasets.jpg)
-
+![](https://github.com/TwoTu/MF-LIME/blob/main/images/result_datasets.jpg)
 
 
 ## Citations
