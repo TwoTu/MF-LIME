@@ -36,7 +36,7 @@
 本项目 `.m` 函数文件夹
 
 ### Test
-低光照图像增强领域各方法对比，具体说明见文件夹下`READ.md`文件。
+低光照图像增强领域各方法对比，具体说明见文件夹下`README.md`文件。
 - `Dong.m`：Dong等人基于去雾模型的方法，论文[《Fast efficient algorithm for enhancement of low lighting video》](https://ieeexplore.ieee.org/document/6012107)
 - `lime.m`：Guo等人基于Retinex模型的方法，论文[《LIME: Low-light Image Enhancement via Illumination Map Estimation》](https://ieeexplore.ieee.org/document/7782813)
 - `multi_fusion.p`：Fu等人基于融合的方法，未开源，论文[《A fusion based Enhancing Method for Weakly illuminated Images》](https://xueyangfu.github.io/projects/sp2016.html)
@@ -46,8 +46,64 @@
 
 ## 实验结果
 - **各方法主观对比**
-
-![]()
+![](.\images\result.jpg)
 
 - **各方法客观评价**
-![]()
+![](.\images\result_datasets.jpg)
+
+
+
+## Citations
+
+```
+@inproceedings{8305027, 
+  author={W. Zhang and G. Li and Z. Ying}, 
+  booktitle={2017 IEEE Visual Communications and Image Processing (VCIP)}, 
+  title={A new underwater image enhancing method via color correction and illumination adjustment}, 
+  year={2017},  
+  pages={1-4}, 
+  doi={10.1109/VCIP.2017.8305027},
+}
+@inproceedings{
+  title={Color Balance and Fusion for Underwater Image Enhancement},
+  author={C. O. Ancuti, C. Ancuti, C. De Vleeschouwer and P. Bekaert},
+  booktitle={in IEEE Transactions on ImageProcessing,
+  volume={27},
+  pages={379-393},
+  month = {Jan},
+  year={2018}
+}
+
+@InProceedings{Ying_2017_ICCV,
+  author = {Ying, Zhenqiang and Li, Ge and Ren, Yurui and Wang, Ronggang and Wang, Wenmin},
+  title = {A New Low-Light Image Enhancement Algorithm Using Camera Response Model},
+  booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+  month = {Oct},
+  year = {2017}
+}
+@article{fu2016mf,
+  title={A fusion-based enhancing method for weakly illuminated images},
+  author={Fu, Xueyang and Zeng, Delu and Huang, Yue and Liao, Yinghao and Ding, Xinghao and Paisley, John},
+  journal={Signal Processing},
+  volume={129},
+  pages={82--96},
+  year={2016},
+  publisher={Elsevier}
+}
+@inproceedings{
+  title={LIME: Low-light Image Enhancement via Illumination Map Estimation},
+  author={Guo X , Yu L , Ling H},
+  booktitle={IEEE Transactions on Image Processing},
+  pages={1-1},
+  year={2016},
+  organization={IEEE}
+}
+@inproceedings{dong2011fast,
+  title={Fast efficient algorithm for enhancement of low lighting video},
+  author={Dong, Xuan and Wang, Guan and Pang, Yi and Li, Weixin and Wen, Jiangtao and Meng, Wei and Lu, Yao},
+  booktitle={2011 IEEE International Conference on Multimedia and Expo},
+  pages={1--6},
+  year={2011},
+  organization={IEEE}
+}
+```
