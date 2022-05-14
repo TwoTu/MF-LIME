@@ -1,3 +1,4 @@
+% 图像亮度调整
 % @INPROCEEDINGS{8305027, 
 % author={W. Zhang and G. Li and Z. Ying}, 
 % booktitle={2017 IEEE Visual Communications and Image Processing (VCIP)}, 
@@ -6,9 +7,7 @@
 % pages={1-4}, 
 % doi={10.1109/VCIP.2017.8305027},
 % }
-
 function out = lumina_adjust( img )
-%伽马矫正图像
     lambda = 0.4;
     sigma = 5; 
     gamma = 0.75; 

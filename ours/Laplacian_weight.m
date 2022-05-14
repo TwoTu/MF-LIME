@@ -1,4 +1,6 @@
 function WL = Laplacian_weight(Img)
+%拉普拉斯对比度权重
+
 %提取亮通道
 h = rgb2hsv(Img);
 l = double(h(:,:,3));

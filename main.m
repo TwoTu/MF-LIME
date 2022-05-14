@@ -13,10 +13,11 @@ subplot(224),imshow(fusion),title("最终输出图像");
 % figure,imshow(fusion),title('最终输出图像');
 
 %图像质量评价
-% Brisque = brisque(fusion);   %越小越好
-% CEIQ = ceiq(fusion);         %越大越好
-% ENIQA = eniqa(fusion);       %越小越好
-
+Brisque = brisque(fusion);   %越小越好
+CEIQ = ceiq(fusion);         %越大越好
+ENIQA = eniqa(fusion);       %越小越好
+NIQE = niqe(fusion);         %越小越好
+PIQE = piqe(fusion);         %越小越好
 
 
 
