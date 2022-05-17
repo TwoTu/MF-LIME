@@ -1,8 +1,12 @@
 # MF-LIME
 **基于Retinex模型和多尺度融合的低光照图像增强技术**
 
-**实验环境**   ![](https://img.shields.io/badge/MATLAB-R2020b-green.svg)
+**Low-light image enhancement technology based on Retinex model and multi-scale fusion**
+
+![](https://img.shields.io/badge/MATLAB-R2020b-green.svg)  **实验环境**
+
 ***
+
 本项目基于Zhang等人[《A New Underwater Image Enhancing Method via Color Correction and Illumination Adjustment》](https://github.com/zhangwenhao123/VCIP2017)论文中提出的**亮度调整**流程和Codruta O. Ancuti等人[《Color Balance and Fusion for Underwater Image Enhancement》](https://ieeexplore.ieee.org/document/8058463)论文中提出的**多尺度融合**框架相结合的低光照图像增强技术。
 
 ## Abstract
@@ -21,7 +25,7 @@
 - [VV数据集](https://drive.google.com/file/d/1RL7sf0vvfE7UDSQUH7atHHkibAUjprtn/view) ，共有24张图像，只选取了前22张低光照图像，未计入2张测试图像。
 
 ### images
-- 用华为P40相机拍摄的15张图像。
+- 用华为P40相机拍摄的15张低光照图像。
 
 ### IQA
 非参考图像质量评价指标（[CEIQ](https://github.com/imfing/CEIQ)，[ENIQA](https://github.com/jacob6/ENIQA)）的项目文件，点击即可查看该指标Github项目源。指标（BRISQUE，NIQE，PIQE）MATLAB图像处理工具箱自带，直接调用即可。
@@ -46,10 +50,10 @@
 
 ## 实验结果
 - **各方法主观对比**
-![](https://github.com/TwoTu/MF-LIME/blob/main/images/result.jpg)
+![](https://cdn.jsdelivr.net/gh/TwoTu/MF-LIME@master/images/result.jpg)
 
 - **各方法客观评价**
-![](https://github.com/TwoTu/MF-LIME/blob/main/images/result_datasets.jpg)
+![](https://cdn.jsdelivr.net/gh/TwoTu/MF-LIME@master/images/result_datasets.jpg)
 
 
 ## Citations
